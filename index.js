@@ -1,5 +1,11 @@
 const url = 'https://favqs.com/api/qotd';
 
+const quoteText = document.querySelector('.quote__text');
+const quoteAuthor = document.querySelector('.quote__author');
+const quoteReloadBtn = document.querySelector('.quote__reload-btn');
+
+quoteReloadBtn.addEventListener('click', getData);
+
 async function getData() {
   const res = await fetch(url);
   const data = await res.json();
@@ -7,8 +13,8 @@ async function getData() {
 }
 
 function showData(data) {
-  const quoteAuthor = data.quote.author;
-  const quoteText = data.quote.body;
+  quoteText.textContent = data.quote.body;
+  quoteAuthor.textContent = data.quote.author;
 }
 
 getData();
