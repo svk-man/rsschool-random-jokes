@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 0 30px;
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
   background: url("./assets/img/bg.jpg") no-repeat center center;
@@ -13,8 +18,8 @@ body {
 }
 
 .main {
+  min-height: 620px;
   height: calc(100vh - 80px);
-  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,4 +47,21 @@ body {
 
 .footer {
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  font-size: 35px;
+}
+
+.footer__year {
+  margin-right: auto;
+}
+
+.footer__rss {
+  width: 100px;
+  height: 37px;
+  background: url("./assets/svg/rs_school_js.svg") no-repeat center;
+  background-size: cover;
+  opacity: .77;
 }
