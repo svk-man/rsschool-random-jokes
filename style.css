@@ -13,7 +13,7 @@ body {
   padding: 0 30px;
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
-  background: url("./assets/img/bg.jpg") no-repeat center center;
+  background: url('./assets/img/bg-1.jpg') no-repeat center center;
   background-size: cover;
 }
 
@@ -36,7 +36,6 @@ body {
 }
 
 .main {
-  min-height: 620px;
   height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
