@@ -17,26 +17,52 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   body {
     font-size: 42px;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 680px) {
   body {
     font-size: 38px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   body {
     font-size: 32px;
   }
 }
 
+@media (max-width: 420px) {
+  body {
+    font-size: 28px;
+  }
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.lang-switcher__btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+}
+
+.lang-switcher__btn:hover {
+  cursor: pointer;
+}
+
 .main {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 160px);
   display: flex;
   justify-content: center;
   align-items: center;
